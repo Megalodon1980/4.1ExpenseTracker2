@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/design_default_color_primary_variant"
+        app:cardElevation="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="Digital Money Bag"
+            android:textColor="@color/design_default_color_secondary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/material_dynamic_neutral30"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Balance"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT: 13800.0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/design_default_color_secondary"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/material_dynamic_neutral30"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Expense"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/totalExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT: 13800.0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/design_default_color_secondary"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/addExpense"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="Add Expense"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_shape"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/expenseShow"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="Show All Data"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_shape"
+                    android:textColor="@color/black"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@color/material_dynamic_neutral30"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Income"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/totalIncome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDT: 13800.0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/design_default_color_secondary"/>
+
+
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/addIncome"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="Add Expense"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@android:attr/selectableItemBackground"
+                    android:background="@drawable/card_shape"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/incomeShow"
+                    android:layout_margin="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:text="Show All Data"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:foreground="@android:attr/selectableItemBackground"
+                    android:background="@drawable/card_shape"
+                    android:textColor="@color/black"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>
